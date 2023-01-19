@@ -18,7 +18,7 @@ public class Card {
     public Card(String faceNumber, String suit)
     {
         setFaceName(faceNumber);
-        this.suit = suit;
+       setSuit(suit);
     }
 
     public String getFaceName() {
@@ -31,6 +31,15 @@ public class Card {
     public static List<String> getValidFaceNames()
     {
         return Arrays.asList("2","3","4","5","6","7","8","9","10","jack","queen","king","ace");
+    }
+
+    /**
+     * This method returns a list of valid suits
+     * @return "hearts","diamonds","spades","clubs"
+     */
+    public static List<String> getValidSuits()
+    {
+        return Arrays.asList("hearts","diamonds","spades","clubs");
     }
 
     /**
@@ -49,8 +58,16 @@ public class Card {
         return suit;
     }
 
+    /**
+     * This will validate the suit and set the instance variable
+     * @param suit "hearts","diamonds","spades","clubs"
+     */
     public void setSuit(String suit) {
-        this.suit = suit;
+        if (getValidSuits().contains(suit))
+            this.suit = suit;
+        else
+            throw new IllegalArgumentException(suit + " is not a valid suit, use one of " +
+                    getValidSuits());
     }
 
     @Override
