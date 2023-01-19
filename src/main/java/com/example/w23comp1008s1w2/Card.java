@@ -75,4 +75,17 @@ public class Card {
     {
         return faceName + " of " + suit;
     }
+
+    /**
+     * This method returns the colour of the card.
+     * Red = hearts or diamonds
+     * black = spades or clubs
+     */
+    public String getColour()
+    {
+        if (suit.equals("hearts")|| suit.equals("diamonds"))
+            return "red";
+        else
+            return "black";
+    }
 }
