@@ -23,5 +23,9 @@ public class Main {
 
         System.out.println("Hand 1: "+hand1);
         System.out.println("Hand 2: "+hand2);
+
+        System.out.println(hand1.getClass());
+        System.out.println(deck.getClass());
+
     }
 }
