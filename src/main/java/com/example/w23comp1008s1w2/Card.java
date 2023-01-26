@@ -1,5 +1,7 @@
 package com.example.w23comp1008s1w2;
 
+import javafx.scene.image.Image;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -105,5 +107,15 @@ public class Card {
         List<String> faceNames = getValidFaceNames();
         int indexOfCard = faceNames.indexOf(faceName);
         return indexOfCard+2;
+    }
+
+    /**
+     * This will return an Image of the Card
+     */
+    public Image getImage()
+    {
+        String fileName = "images/" + faceName + "_of_" + suit +".png";
+        System.out.println(fileName);
+        return new Image(Card.class.getResourceAsStream(fileName));
     }
 }
