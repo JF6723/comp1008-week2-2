@@ -61,7 +61,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.w23comp1008s1w2/com.example.w23comp1008s1w2.HelloApplication
+                            <mainClass>com.example.w23comp1008s1w2/com.example.w23comp1008s1w2.CardApplication
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>

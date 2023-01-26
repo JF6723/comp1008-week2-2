@@ -7,12 +7,12 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloApplication extends Application {
+public class CardApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        FXMLLoader fxmlLoader = new FXMLLoader(CardApplication.class.getResource("card-hand-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Super Awesome Card Viewer 3000");
         stage.setScene(scene);
         stage.show();
     }
