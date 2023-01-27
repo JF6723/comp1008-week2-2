@@ -36,6 +36,7 @@ public class CardHandViewController implements Initializable {
         colourLabel.setText("Colour: "+cardSelected.getColour());
         suitLabel.setText("Suit: "+cardSelected.getSuit());
         valueLabel.setText("Value: " + cardSelected.getCardValue());
+        imageView.setImage(cardSelected.getImage());
     }
 
 
